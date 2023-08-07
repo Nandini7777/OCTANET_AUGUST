@@ -1,0 +1,324 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1250px;
+    /* height: 100vh; */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+  }
+  
+  /* Navigation styles */
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar img {
+    width: 100px; 
+    height: auto;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav a:hover {
+    color: #f2f2f2;
+  }
+  
+  /* Top section styles */
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .product1,
+  .travel1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+    margin: 0 20px;
+  }
+  
+  .product1 img {
+    max-height: 300px;
+    width: 100%;
+  }
+  .travel1 img {
+    max-height: 300px;
+    width: 60%
+  }
+  .product1 img,
+  .travel1 img {
+    /* width: 100%; */
+    /* max-height: 200px; */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product1:hover img,
+  .travel1:hover img {
+    transform: scale(1.05);
+  }
+  .head{
+    width: 30%;
+  }
+  .head h1 {
+    font-size: 52px;
+    margin-bottom: 2px 5px;
+    font-family: Georgia, serif;
+    animation: fadeInDown 1s forwards;
+  }
+  .head .in{
+    display: inline;
+    font-size: large;
+  }
+  .head h2 {
+    font-size: 34px;
+    margin-bottom: 2px 10px;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .head p {
+    font-size: 16px;
+    color: #666;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  /* Mid section styles */
+  .mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 0;
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .mid img { 
+    max-width: 50%;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  .mid img:hover {
+    transform: scale(1);
+  }
+  
+  /* Bottom section styles */
+  .bottom {
+    display: flex;
+    /* max-width: 100%;
+    max-height: 80%; */
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 30%;
+  }
+  .left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 45%; */
+    margin: 0px 5%;
+  }
+  
+  .right .description , .left .description {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .right .description h2 , .left .description h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    animation: fadeInLeft 1s forwards;
+  }
+  
+  .right .description p , .left .description p {
+    font-size: 15px;
+    color: #666;
+    animation: fadeInLeft 1s forwards;
+    /* width: 1.3rem; */
+  }
+  .product2 img{
+    margin: 0px 15px;
+    max-height: 400px;
+  }
+  .travel2 img{
+    margin: 0px 15px;
+    max-height: 330px;
+  }
+  .product2 img, .travel2 img {
+    width: 100%;
+    /* max-height: 200px; */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product2 img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive layout */
+  @media screen and (max-width: 768px) {
+    .top {
+      flex-direction: column;
+    }
+  
+    .top > div {
+      margin-bottom: 20px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav {
+      margin-top: 10px;
+    }
+  
+    .left,
+    .right {
+      margin-bottom: 30px;
+      display: flex;
+    }
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .footer-content p {
+    color: #999;
+    margin: 0;
+  }
+  
+  .footer-content p a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-content p a:hover {
+    color: #fff;
+  }
+
+/* Define the keyframes for the rotation animation */
+@keyframes rotate360 
+{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mid img {
+  animation: rotate360 6s linear infinite; /*animation duration (5s in this case) */
+}
